@@ -82,7 +82,7 @@ export const CareersSection: React.FC<CareersSectionProps> = ({ onShowToast }) =
               </div>
 
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-                <span className="label text-slate-500 font-mono">Full-Time · Bangalore HQ</span>
+                <span className="label text-slate-500 font-mono">Full-Time · {job.location}</span>
                 <button
                   onClick={() => setSelectedJob(job)}
                   className="btn btn-primary"

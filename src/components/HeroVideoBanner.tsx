@@ -50,7 +50,7 @@ export const HeroVideoBanner: React.FC<HeroVideoBannerProps> = ({ onOpenEnquire,
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.1, ease: [0.32, 0.72, 0, 1] }}
-          className="display-xl text-white mb-4 sm:mb-6 drop-shadow-xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.08]"
+          className="display-xl text-white mb-3 sm:mb-6 drop-shadow-xl text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.1] break-words"
         >
           Precision steel detailing,<br />
           <span className="text-[#0099ff]">engineered for fabrication</span>
@@ -62,21 +62,21 @@ export const HeroVideoBanner: React.FC<HeroVideoBannerProps> = ({ onOpenEnquire,
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-base sm:text-lg md:text-xl text-slate-100 max-w-3xl mb-8 sm:mb-10 leading-relaxed font-normal"
+          className="text-sm sm:text-lg md:text-xl text-slate-100 max-w-3xl mb-6 sm:mb-10 leading-relaxed font-normal"
         >
           3D Tekla modelling, connection design, pre-bid estimation and shop-ready drawings for fabricators and contractors across North America, Europe and Australia.
         </motion.p>
 
         {/* CTA Buttons */}
         <motion.div
-          className="flex flex-wrap items-center justify-center gap-4 sm:gap-5 mb-8 sm:mb-10"
+          className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 mb-6 sm:mb-10"
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           <button
             onClick={onOpenEnquire}
-            className="btn btn-accent px-8 py-4 text-base sm:text-lg font-bold shadow-2xl"
+            className="btn btn-accent px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold shadow-2xl"
           >
             <span>Request a Quote</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -84,7 +84,7 @@ export const HeroVideoBanner: React.FC<HeroVideoBannerProps> = ({ onOpenEnquire,
           
           <button
             onClick={onExploreProjects}
-            className="btn btn-secondary px-8 py-4 text-base sm:text-lg font-bold shadow-xl"
+            className="btn btn-secondary px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold shadow-xl"
           >
             <span>View Our Projects</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -93,29 +93,29 @@ export const HeroVideoBanner: React.FC<HeroVideoBannerProps> = ({ onOpenEnquire,
 
         {/* Key Stats Row */}
         <motion.div
-          className="w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5 pt-6 sm:pt-8 border-t border-white/20"
+          className="w-full max-w-4xl grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 lg:gap-5 pt-4 sm:pt-8 border-t border-white/20"
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-white/15 text-center shadow-lg">
-            <span className="display-sm block text-white font-bold text-2xl sm:text-3xl lg:text-4xl">1200+</span>
-            <span className="text-xs sm:text-sm text-slate-200 font-mono font-medium block mt-1">Projects delivered</span>
+          <div className="p-3 sm:p-5 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-white/15 text-center shadow-lg">
+            <span className="display-sm block text-white font-bold text-xl sm:text-2xl lg:text-3xl">1200+</span>
+            <span className="text-[11px] sm:text-xs text-slate-200 font-mono font-medium block mt-1">Projects delivered</span>
           </div>
 
-          <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-white/15 text-center shadow-lg">
-            <span className="display-sm block text-[#0099ff] font-bold text-2xl sm:text-3xl lg:text-4xl">5+</span>
-            <span className="text-xs sm:text-sm text-slate-200 font-mono font-medium block mt-1">Countries served</span>
+          <div className="p-3 sm:p-5 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-white/15 text-center shadow-lg">
+            <span className="display-sm block text-[#0099ff] font-bold text-xl sm:text-2xl lg:text-3xl">5+</span>
+            <span className="text-[11px] sm:text-xs text-slate-200 font-mono font-medium block mt-1">Countries served</span>
           </div>
 
-          <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-white/15 text-center shadow-lg">
-            <span className="display-sm block text-white font-bold text-lg sm:text-xl lg:text-2xl">AISC · CISC · MM</span>
-            <span className="text-xs sm:text-sm text-slate-200 font-mono font-medium block mt-1">Detailing standards</span>
+          <div className="p-3 sm:p-5 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-white/15 text-center shadow-lg">
+            <span className="display-sm block text-white font-bold text-base sm:text-xl lg:text-2xl">AISC · CISC · MM</span>
+            <span className="text-[11px] sm:text-xs text-slate-200 font-mono font-medium block mt-1">Detailing standards</span>
           </div>
 
-          <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-white/15 text-center shadow-lg">
-            <span className="display-sm block text-[#e8250e] font-bold text-2xl sm:text-3xl lg:text-4xl">24/7</span>
-            <span className="text-xs sm:text-sm text-slate-200 font-mono font-medium block mt-1">Dual-shift support</span>
+          <div className="p-3 sm:p-5 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-white/15 text-center shadow-lg">
+            <span className="display-sm block text-[#e8250e] font-bold text-xl sm:text-2xl lg:text-3xl">24/7</span>
+            <span className="text-[11px] sm:text-xs text-slate-200 font-mono font-medium block mt-1">Dual-shift support</span>
           </div>
         </motion.div>
       </div>

@@ -11,7 +11,8 @@ import {
   Phone,
   Mail,
   User,
-  ShieldCheck
+  ShieldCheck,
+  MapPin
 } from 'lucide-react';
 
 interface HomeSectionProps {
@@ -157,7 +158,7 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
 
             <div className="space-y-6 max-w-4xl mx-auto text-slate-700 text-base sm:text-lg md:text-xl leading-relaxed text-left sm:text-center font-normal">
               <p>
-                <strong className="text-slate-950 font-bold">3 Axial</strong> is a steel detailing firm headquartered in Bengaluru, delivering reliable, detail-oriented engineering to clients around the world. Across more than 1200 projects, we have worked in every construction segment — industrial, commercial, residential, infrastructure, stadia and power plants.
+                <strong className="text-slate-950 font-bold">3Axial Steel Detailing Services Pvt Ltd</strong> is a premier steel detailing firm headquartered in Bengaluru, with engineering branch operations in Coimbatore and Austin, Texas (USA), delivering code-compliant steel detailing across North America, Europe and Australia. Across more than 1200 projects, we have worked in every construction segment — industrial, commercial, residential, infrastructure, stadia and power plants.
               </p>
               <p>
                 Founded in 2018 by professionals with hands-on experience in structural and mechanical steel design and fabrication, many of our core team began their careers on the shop floor and in the field. That practical background, combined with strong engineering acumen, lets us bridge the gap between design and execution.
@@ -513,6 +514,60 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
                 >
                   <Mail className="w-5 h-5 text-[#0099ff]" />
                   <span>info@3axialsteeldetail.com</span>
+                </a>
+              </div>
+
+              {/* Global HQ and Branch Offices */}
+              <div className="space-y-3 pt-2">
+                {/* Global HQ (Bengaluru) */}
+                <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-white border border-[#929da7]/35 shadow-xs border-l-4 border-l-[#0099ff]">
+                  <MapPin className="w-5 h-5 text-[#0099ff] shrink-0 mt-0.5" />
+                  <div className="text-xs sm:text-sm text-slate-700">
+                    <span className="font-mono font-bold text-slate-900 block">Global HQ (Bengaluru)</span>
+                    <p className="text-slate-600 text-xs mt-0.5 leading-relaxed font-normal">
+                      17B, 3rd floor, Tech Mahindra Road, Opp. Tata Power Gate No. 01, Electronic City Phase 2, Bengaluru, Karnataka - 560100
+                    </p>
+                  </div>
+                </div>
+
+                {/* Coimbatore Branch (Clickable Map Link) */}
+                <a
+                  href="https://maps.app.goo.gl/gKHvPtPitJQvQEdZ9?g_st=aw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-start gap-3 p-3.5 rounded-2xl bg-white border border-[#929da7]/35 hover:border-emerald-600 transition-all shadow-xs border-l-4 border-l-emerald-600"
+                  title="Open Coimbatore Branch in Google Maps"
+                >
+                  <MapPin className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                  <div className="text-xs sm:text-sm text-slate-700">
+                    <div className="flex items-center gap-1.5 font-mono font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                      <span>Branch Office (Coimbatore)</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-emerald-600" />
+                    </div>
+                    <p className="text-slate-600 text-xs mt-0.5 leading-relaxed font-normal">
+                      Door No 438 A, 1st Floor, Kamarajar Rd, Peelamedu, Lakshmipuram, Coimbatore, Tamil Nadu - 641004
+                    </p>
+                  </div>
+                </a>
+
+                {/* USA Branch (Clickable Map Link) */}
+                <a
+                  href="https://maps.app.goo.gl/QZQ683EXPvxZHiecA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-start gap-3 p-3.5 rounded-2xl bg-white border border-[#929da7]/35 hover:border-[#e8250e] transition-all shadow-xs border-l-4 border-l-[#e8250e]"
+                  title="Open Austin USA Branch in Google Maps"
+                >
+                  <MapPin className="w-5 h-5 text-[#e8250e] shrink-0 mt-0.5" />
+                  <div className="text-xs sm:text-sm text-slate-700">
+                    <div className="flex items-center gap-1.5 font-mono font-bold text-slate-900 group-hover:text-[#e8250e] transition-colors">
+                      <span>USA Branch (Austin, Texas)</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-[#e8250e]" />
+                    </div>
+                    <p className="text-slate-600 text-xs mt-0.5 leading-relaxed font-normal">
+                      5900 BALCONES DR STE 100, AUSTIN, TX 78731
+                    </p>
+                  </div>
                 </a>
               </div>
 

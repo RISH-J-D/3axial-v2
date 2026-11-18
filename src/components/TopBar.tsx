@@ -3,9 +3,9 @@ import { Phone, Mail } from 'lucide-react';
 
 export const TopBar: React.FC = () => {
   return (
-    <div className="w-full bg-[#182330] text-[#fdfdfe] text-xs font-mono border-b border-[#2d3f53] py-2 transition-all">
-      <div className="w-full max-w-[1780px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-4">
-        <div className="flex items-center gap-6 sm:gap-8">
+    <div className="w-full bg-[#182330] text-[#fdfdfe] text-[11px] sm:text-xs font-mono border-b border-[#2d3f53] py-2 transition-all">
+      <div className="w-full max-w-[1780px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-3 flex-wrap sm:flex-nowrap">
+        <div className="flex items-center gap-4 sm:gap-8 flex-wrap">
           <a
             href="tel:+16506956923"
             className="flex items-center gap-2 text-slate-200 hover:text-[#0099ff] transition-colors"

@@ -286,7 +286,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     id: 'job-1',
     title: 'Business Development Manager – BDM',
     department: 'Sales & Market Growth',
-    location: 'Bangalore (Electronic City)',
+    location: 'Bangalore (HQ) / Remote',
     description: 'We’re seeking a Business Development Manager to drive growth by building client relationships and expanding our presence in global steel detailing markets. Strong communication, market insight, and experience in B2B sales within AISC or construction industry are essential.',
     requirements: [
       '5+ years in B2B construction / steel sales',
@@ -299,7 +299,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     id: 'job-2',
     title: 'Connection Design Engineer',
     department: 'Structural Engineering',
-    location: 'Bangalore (Electronic City)',
+    location: 'Bangalore (HQ) / Coimbatore Branch',
     description: 'We’re seeking a Connection Design Engineer to develop safe, efficient, and code-compliant steel connections for diverse structural projects. Strong understanding of AISC 360/341 standards and proficiency in RAM, STAAD.Pro, or IDEA StatiCa preferred.',
     requirements: [
       'B.Tech / M.Tech in Civil / Structural Engineering',
@@ -312,7 +312,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     id: 'job-3',
     title: 'Research & Development (R & D) Specialist',
     department: 'Tekla Automation & BIM',
-    location: 'Bangalore (Electronic City)',
+    location: 'Bangalore (HQ)',
     description: 'We are building an R&D team dedicated to innovation in steel detailing technology. Ideal candidates will create Tekla C# Open API plugins, custom components, and automated BIM workflows.',
     requirements: [
       'Experience in Tekla Open API development (C# / .NET)',
@@ -325,7 +325,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     id: 'job-4',
     title: 'Tekla Administrator',
     department: 'Systems & CAD Operations',
-    location: 'Bangalore (Electronic City)',
+    location: 'Bangalore (HQ) / Coimbatore Branch',
     description: 'We are seeking skilled Tekla Admin professionals to support and stream our steel detailing operations. Manages Tekla Structures licenses, environment settings, firm folders, and project setups.',
     requirements: [
       'Advanced Tekla Structures administration',

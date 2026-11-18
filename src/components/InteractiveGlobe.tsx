@@ -34,29 +34,50 @@ export const COUNTRIES_DATA: CountryData[] = [
     lat: 12.9716,
     lon: 77.5946,
     isHQ: true,
-    codeStandard: 'Global Engineering Operations',
+    codeStandard: 'Global Engineering Headquarters',
     tagline: '120+ Tekla detailers delivering shop-ready fabrication models worldwide',
     projects: [
       {
         id: 'in-1',
-        title: '3 Axial Global Command Center',
-        location: 'Bangalore, India',
-        tonnage: 'HQ Facility',
+        title: '3Axial Global Engineering Headquarters',
+        location: 'Electronic City, Bengaluru, Karnataka, India',
+        tonnage: 'Global HQ Facility',
         sector: 'Engineering Operations',
         codeStandard: 'AISC / CISC / Eurocode / AS 4100',
-        description: 'Central engineering headquarters managing dual-shift operations, BIM automation, and connection design.',
+        description: 'Global engineering headquarters at Electronic City, Bengaluru, managing worldwide detailing operations, BIM automation, and connection design.',
+        image: 'https://www.3axialsteeldetail.com/wp-content/uploads/2025/07/3axial-Elements.jpg'
+      }
+    ]
+  },
+  {
+    id: 'branch-coimbatore',
+    name: 'Coimbatore (Branch)',
+    flag: 'IND',
+    lat: 11.0168,
+    lon: 76.9558,
+    codeStandard: 'India Branch Operations',
+    tagline: 'Engineering branch office for 3D modeling and pre-bid estimation',
+    projects: [
+      {
+        id: 'in-2',
+        title: '3Axial Coimbatore Branch Office',
+        location: 'Peelamedu, Coimbatore, Tamil Nadu, India',
+        tonnage: 'Branch Facility',
+        sector: 'Engineering Operations',
+        codeStandard: 'AISC / CISC / Eurocode',
+        description: 'Engineering branch office at Peelamedu, Coimbatore, supporting commercial and industrial fabrication detailing.',
         image: 'https://www.3axialsteeldetail.com/wp-content/uploads/2025/07/3axial-Elements.jpg'
       }
     ]
   },
   {
     id: 'usa',
-    name: 'United States',
+    name: 'Austin, TX (US Branch)',
     flag: 'USA',
-    lat: 38.5,
-    lon: -96.0,
+    lat: 30.2672,
+    lon: -97.7431,
     codeStandard: 'AISC 360-16 / AISC 341 Seismic',
-    tagline: 'High-rise commercial, refineries, substations & institutional builds',
+    tagline: 'North American engineering coordination, commercial & industrial builds',
     projects: [
       {
         id: 'us-1',
@@ -464,7 +485,7 @@ export const InteractiveGlobe: React.FC = () => {
       globeGroup.add(countrySprite);
       clickableObjects.push(countrySprite);
 
-      // 3D Geodesic Arc from Bangalore to this Country
+      // 3D Geodesic Arc from Bangalore HQ to this Country or Branch
       const distance = hqPos.distanceTo(destPos);
       const midPoint = new THREE.Vector3().addVectors(hqPos, destPos).multiplyScalar(0.5);
       const arcAltitude = GLOBE_RADIUS + Math.max(1.5, distance * 0.32);

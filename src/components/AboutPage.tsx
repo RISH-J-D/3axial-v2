@@ -57,7 +57,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 Delivering Excellence to <span className="text-[#0099ff]">US & Global</span> Fabricators<span className="dot">.</span>
               </h2>
               <p className="lede">
-                Headquartered in Electronic City, Bangalore, <strong className="text-slate-900 font-semibold">3 Axial</strong> is a premier structural engineering firm specializing in 3D Tekla steel modeling, connection design, pre-bid estimation, and shop drawing production.
+                Headquartered in Bengaluru, with engineering branch operations in Coimbatore (Tamil Nadu) and Austin (Texas, USA), <strong className="text-slate-900 font-semibold">3Axial Steel Detailing Services Pvt Ltd</strong> is a premier structural engineering firm specializing in 3D Tekla steel modeling, connection design, pre-bid estimation, and shop drawing production.
               </p>
               <p className="text-slate-600 leading-relaxed text-sm">
                 With a seasoned team of structural detailers, connection engineers, and BIM specialists, we serve steel fabricators, general contractors, and structural engineers across North America, Canada, Europe, and Asia.

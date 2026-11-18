@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenE
 
           {/* Brand Logo / Identity + Certified Badges (AISC First, then NISD) */}
           <div
-            className="flex items-center gap-3.5 sm:gap-4 cursor-pointer select-none"
+            className="flex items-center gap-2 sm:gap-3.5 cursor-pointer select-none shrink-0"
             onClick={() => {
               setActiveTab('home');
               setMobileMenuOpen(false);
@@ -62,21 +62,21 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenE
             <img
               src="https://www.3axialsteeldetail.com/wp-content/uploads/2025/06/3axial-logo.png"
               alt="3Axial Steel Detailing"
-              className="h-10 sm:h-12 w-auto object-contain transition-all"
+              className="h-8 sm:h-10 md:h-12 w-auto object-contain transition-all"
             />
-            <div className="h-8 w-px bg-[#929da7]/40 hidden sm:block" />
+            <div className="h-7 sm:h-8 w-px bg-[#929da7]/40 hidden sm:block" />
             <img
               src="/aisc-badge.png"
               alt="American Institute of Steel Construction"
               title="AISC Member"
-              className="hidden sm:block h-10 sm:h-12 w-auto object-contain hover:scale-105 transition-transform"
+              className="hidden sm:block h-8 sm:h-10 md:h-12 w-auto object-contain hover:scale-105 transition-transform"
             />
-            <div className="h-8 w-px bg-[#929da7]/40 hidden sm:block" />
+            <div className="h-7 sm:h-8 w-px bg-[#929da7]/40 hidden sm:block" />
             <img
               src="/nisd-badge.png"
               alt="National Institute of Steel Detailing"
               title="NISD Member"
-              className="hidden sm:block h-10 sm:h-12 w-auto object-contain hover:scale-105 transition-transform"
+              className="hidden sm:block h-8 sm:h-10 md:h-12 w-auto object-contain hover:scale-105 transition-transform"
             />
           </div>
 
@@ -106,10 +106,10 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenE
           </nav>
 
           {/* Right Action Buttons */}
-          <div className="flex items-center gap-3.5">
+          <div className="flex items-center gap-2 sm:gap-3.5 shrink-0">
             <a
               href="tel:+16506956923"
-              className="hidden sm:inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm sm:text-base font-mono font-semibold text-slate-800 bg-white border border-[#929da7]/45 hover:border-[#0099ff] hover:text-[#0099ff] transition-colors shadow-xs"
+              className="hidden sm:inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-full text-xs sm:text-base font-mono font-semibold text-slate-800 bg-white border border-[#929da7]/45 hover:border-[#0099ff] hover:text-[#0099ff] transition-colors shadow-xs"
               title="Call Senior Estimation Desk"
             >
               <Phone className="w-4 h-4 text-[#e8250e]" />
@@ -118,10 +118,10 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenE
 
             <button
               onClick={onOpenEnquire}
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm sm:text-base font-sans font-bold tracking-wide text-white bg-gradient-to-r from-[#e8250e] to-[#cf1f0a] hover:from-[#cf1f0a] hover:to-[#b51806] transition-all shadow-md shadow-[#e8250e]/20 active:scale-[0.98]"
+              className="inline-flex items-center gap-1.5 sm:gap-2 px-4.5 sm:px-7 py-2.5 sm:py-3 rounded-full text-xs sm:text-base font-sans font-bold tracking-wide text-white bg-gradient-to-r from-[#e8250e] to-[#cf1f0a] hover:from-[#cf1f0a] hover:to-[#b51806] transition-all shadow-md shadow-[#e8250e]/20 active:scale-[0.98]"
             >
               <span>Get Quote</span>
-              <ArrowUpRight className="w-4 h-4" />
+              <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </button>
 
             {/* Mobile Menu Hamburger */}
@@ -130,7 +130,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenE
               aria-label={mobileMenuOpen ? 'Close Navigation Menu' : 'Open Navigation Menu'}
               aria-expanded={mobileMenuOpen}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="xl:hidden relative flex h-11 w-11 items-center justify-center rounded-full border border-[#929da7]/40 bg-white text-slate-800 transition-colors hover:border-[#0099ff]"
+              className="xl:hidden relative flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-[#929da7]/40 bg-white text-slate-800 transition-colors hover:border-[#0099ff]"
             >
               <span className="relative block h-3 w-5">
                 <span
