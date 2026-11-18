@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, ArrowUpRight } from 'lucide-react';
+import { LanguageSelector } from './LanguageSelector';
 
 interface HeaderProps {
   activeTab: string;
@@ -176,6 +177,11 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenE
                   </button>
                 );
               })}
+
+              {/* Mobile Language Selector */}
+              <div className="pt-2">
+                <LanguageSelector variant="mobile" />
+              </div>
 
               <div className="pt-4 border-t border-[#929da7]/25 mt-2 flex flex-col gap-3">
                 <a

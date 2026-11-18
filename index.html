@@ -30,6 +30,47 @@
 </head>
 
 <body>
+  <!-- Hidden anchor for Google Translate DOM bridge -->
+  <div id="google_translate_element" style="position:absolute;top:-9999px;left:-9999px;opacity:0;pointer-events:none;"></div>
+
+  <script type="text/javascript">
+    // Safe guard for React DOM reconciler when Google Translate inserts <font> wrappers
+    if (typeof Node === 'function' && Node.prototype) {
+      const origRemoveChild = Node.prototype.removeChild;
+      Node.prototype.removeChild = function(child) {
+        if (child.parentNode !== this) {
+          if (typeof console !== 'undefined' && console.warn) {
+            console.warn('[Translate] Handled parentNode mismatch on removeChild');
+          }
+          return child;
+        }
+        return origRemoveChild.apply(this, arguments);
+      };
+
+      const origInsertBefore = Node.prototype.insertBefore;
+      Node.prototype.insertBefore = function(newNode, refNode) {
+        if (refNode && refNode.parentNode !== this) {
+          if (typeof console !== 'undefined' && console.warn) {
+            console.warn('[Translate] Handled parentNode mismatch on insertBefore');
+          }
+          return newNode;
+        }
+        return origInsertBefore.apply(this, arguments);
+      };
+    }
+
+    // Google Translate element initializer
+    function googleTranslateElementInit() {
+      if (window.google && window.google.translate) {
+        new window.google.translate.TranslateElement({
+          pageLanguage: 'en',
+          autoDisplay: false
+        }, 'google_translate_element');
+      }
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
